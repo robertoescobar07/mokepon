@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
+body {
+  font-family: "Dangrek", sans-serif;
+  background-color: #89b9ad;
+}
+
+#seleccionar_mascotas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: white;
+  font-size: 32px;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 20px;
+}
+.tarjeta,
+.tarjetasAtaques {
+  display: flex;
+  gap: 10px;
+}
+.tarjetaDeMokepon {
+  width: 180px;
+  height: 100px;
+  background: #c7dca7;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  display: flex;
+}
+
+.tarjetaDeMokepon img {
+  width: 76px;
+}
+
+#botonMascota {
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  margin-top: 30px;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  background-color: #b99470;
+}
+
+#seleccionar_ataque {
+  flex-direction: column;
+  align-items: center;
+}
+
+.botonAtaques {
+  background-color: #c7dca7;
+  border: 1px solid white;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 100px;
+  font-family: "Dangrek", sans-serif;
+}
+
+#mensaje {
+  width: 280px;
+  background: #d2e3c8;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#botonReiniciar {
+  border: none;
+}
+
+.ataques {
+  display: grid;
+  grid-template-columns: 100px 100px;
+}
+
+.ataque-Jugador,
+.ataque-Enemigo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 360px) {
+  .tarjeta,
+  .tarjetasAtaques {
+    flex-direction: column;
+  }
+}
